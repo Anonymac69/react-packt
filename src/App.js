@@ -1,17 +1,15 @@
-import React from 'react'
-import Custom from './components/custom'
-import States from './components/states'
-import Clock from './components/clock'
+import React, { createContext } from 'react'
+import { Footer } from './components/Footer'
+import { Nav } from './components/Nav'
 import './App.css';
 
 const App = () => {
 
   return (
     <div className='container'>
-      <Custom/>
-      <States/>
-      <Clock/>
-    </div>
+      <Nav />
+      <Footer />
+    </div >
   )
 }
 
