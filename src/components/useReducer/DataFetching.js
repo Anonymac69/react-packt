@@ -32,7 +32,7 @@ export const DataFetching = () => {
   useEffect(() => {
     const fetchData = () => {
       axios
-        .get('https://jsonplaceholder.typicode.com/posts/1')
+        .get('https://jsonplaceholder.typicode.com/posts/50')
         .then(res => {
           dispatch({ type: 'FETCH_SUCCESS', payload: res.data })
         })

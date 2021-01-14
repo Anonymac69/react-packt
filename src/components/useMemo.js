@@ -1,6 +1,6 @@
 import React from 'react'
 import { useContext, useMemo, useState } from 'react'
-import { ThemeContext } from './ComponentA'
+import { ThemeContext } from './useContext/ComponentA'
 
 export const Memo = () => {
   const theme = useContext(ThemeContext)
@@ -26,7 +26,7 @@ export const Memo = () => {
     <div>
       <div>
         <button
-          style={{ background: theme.background, color: theme.color }}
+          style={{ background: theme.background, color: theme.color, padding: theme.padding }}
           onClick={incrementOne}>
           Count One  {countOne}
         </button>
@@ -34,7 +34,7 @@ export const Memo = () => {
       </div>
       <div>
         <button
-          style={{ background: theme.background, color: theme.color }}
+          style={{ background: theme.background, color: theme.color, padding: theme.padding }}
           onClick={incrementTwo}>
           Count Two  {countTwo}
         </button>

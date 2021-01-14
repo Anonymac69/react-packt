@@ -1,5 +1,5 @@
 import React, { useContext, useReducer } from 'react'
-import { ThemeContext } from './ComponentA'
+import { ThemeContext } from './useContext/ComponentA'
 
 const initialState = 0
 const reducer = (state, action) => {

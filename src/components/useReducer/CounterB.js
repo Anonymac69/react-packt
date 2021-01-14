@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useContext, useEffect, useReducer } from 'react'
-import { ThemeContext } from './ComponentA'
+import { ThemeContext } from '../useContext/ComponentA'
 
 const initialState = {
   firstCounter: 0,

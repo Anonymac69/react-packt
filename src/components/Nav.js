@@ -1,12 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-import ComponentA from './ComponentA';
-import { CounterA } from './CounterA';
-import { CounterB } from './CounterB';
-import { CounterC } from './CounterC';
-import { DataFetching } from './DataFetching';
-import { Memo } from './Memo'
-import { Ref } from './Ref'
+import ComponentA from './useContext/ComponentA';
+import { CounterC } from './useReducer/CounterC';
+import { DataFetching } from './useReducer/DataFetching';
+import { Memo } from './useMemo'
+import { Ref } from './useRef'
 
 
 export const Nav = () => {
@@ -39,7 +37,7 @@ export const Nav = () => {
         <Route path='/useRef'>
           <Ref />
         </Route>
-        <Route path='/dataFetch'>
+        <Route path='/dataFetching'>
           <DataFetching />
         </Route>
       </Switch>
